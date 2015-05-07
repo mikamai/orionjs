@@ -4,7 +4,7 @@ Orion - Mikamai custom distribution
 Orion is an open source framework built on meteor that makes complex as well as simple apps possible with minimal effort. It’s built, modified, used, and supported by an active community of people around the world.
 
 This is **not an official distribution**   
-We packaged a vanilla Orion installation with some custom amde packages.  
+We packaged a vanilla Orion installation with some custom made packages.  
 Specifically we added:  
 
 - a filesystem module tha do not rely on `orionFiles` collection
