@@ -39,6 +39,9 @@ localstorage@1.0.3
 logging@1.0.7
 meteor@1.1.6
 meteor-platform@1.2.2
+mikamai:orionjs-attributes@1.0.1
+mikamai:orionjs-base@1.0.1
+mikamai:orionjs-relationships@1.0.0
 minifiers@1.1.5
 minimongo@1.0.8
 mobile-status-bar@1.0.3
@@ -49,9 +52,6 @@ nicolaslopezj:reactive-templates@1.2.0
 nicolaslopezj:roles@1.0.5
 observe-sequence@1.0.6
 ordered-dict@1.0.3
-orionjs:attributes@1.0.0
-orionjs:base@1.0.0
-orionjs:relationships@1.0.0
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5
