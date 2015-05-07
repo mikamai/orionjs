@@ -1,9 +1,10 @@
 ReactiveTemplates.events('attribute.file', {
   'click .btn-remove': function(event, template) {
     var file = Session.get('file' + template.data.name);
-    if (file && file.fileId) {
-      orion.filesystem.remove(file.fileId);
+    if (file) {
+      orion.filesystem.remove(file);
     }
+    console.log(template.data.name)
     Session.set('file' + template.data.name, null);
   },
   'change input': function(event, template) {
@@ -14,7 +15,7 @@ ReactiveTemplates.events('attribute.file', {
     var upload = orion.filesystem.upload({
       fileList: files,
       name: files[0].name,
-      uploader: 'file-attribute'
+      uploader: 'mikamai-file-attribute'
     });
 
     Session.set('isUploading' + self.name, true);
@@ -27,10 +28,7 @@ ReactiveTemplates.events('attribute.file', {
           console.log(upload.error);
           alert(upload.error.reason);
         } else {
-          Session.set('file' + self.name, {
-            fileId: upload.fileId,
-            url: upload.url
-          });
+          Session.set('file' + self.name, orion.filesystem.basename(upload.url));
         }
         Session.set('isUploading' + self.name, false);
       }
@@ -41,6 +39,7 @@ ReactiveTemplates.events('attribute.file', {
   }
 });
 
+
 ReactiveTemplates.helpers('attribute.file', {
   progress: function () {
     return Session.get('uploadProgress' + this.name);
@@ -50,6 +49,16 @@ ReactiveTemplates.helpers('attribute.file', {
   },
   file: function() {
     return Session.get('file' + this.name);
+  },
+  fileURL: function() {
+    var file = Session.get('file' + this.name);
+    return _.isFunction(orion.filesystem.fileURL) ? orion.filesystem.fileURL(file) : file;
+  }
+});
+
+ReactiveTemplates.helpers('attributePreview.file', {
+  fileURL: function() {
+    return _.isFunction(orion.filesystem.fileURL) ? orion.filesystem.fileURL(this.value) : this.value;
   }
 });
 

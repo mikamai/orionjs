@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     'orionjs:base@1.0.0',
     'orionjs:attributes@1.0.0',
     'less',
-    'orionjs:filesystem@1.0.0', 
+    'mikamai:orionjs-filesystem@1.0.0',
     'froala:editor@1.2.4',
     ]);
 
