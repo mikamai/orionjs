@@ -1,16 +1,16 @@
 Package.describe({
-  name: 'orionjs:accounts',
+  name: 'mikamai:orionjs-accounts',
   summary: 'Orion accounts mannager',
   version: '1.0.3',
-  git: 'https://github.com/orionjs/orion'
+  git: 'https://github.com/mikamai/orionjs'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
   api.use([
-    'orionjs:base@1.0.0',
-    'orionjs:attributes@1.0.0',
+    'mikamai:orionjs-base@1.0.0',
+    'mikamai:orionjs-attributes@1.0.0',
     'accounts-base',
     'accounts-password',
     'useraccounts:core@1.8.1',

@@ -2,14 +2,14 @@ Package.describe({
   name: 'mikamai:orionjs-filesystem',
   summary: 'Orion Filesystem',
   version: '1.0.0',
-  git: 'https://github.com/orionjs/orion'
+  git: 'https://github.com/mikamai/orionjs'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
   api.use([
-    'orionjs:base@1.0.0'
+    'mikamai:orionjs-base@1.0.0'
     ]);
 
   api.addFiles([
@@ -22,5 +22,5 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('orionjs:core');
+  api.use('mikamai:orionjs-core');
 });

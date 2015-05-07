@@ -1,5 +1,5 @@
 # File Simple Attribute
-This is **not** an official subpackage for the super awesome Orion CMS framework and it's based on the original [Orionjs file attribute](https://github.com/orionjs/orion/tree/master/packages/file-attribute). 
+This is **not** an official subpackage for the super awesome Orion CMS framework and it's based on the original [Orionjs file attribute](https://github.com/mikamai/orionjs/tree/master/packages/file-attribute). 
 
 The main difference is that this attribute save in your collection the uploaded file name, instead of the file id inside orionFiles.  
   

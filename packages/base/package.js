@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'orionjs:base',
+  name: 'mikamai:orionjs-base',
   summary: 'Orion',
   version: '1.0.1',
-  git: 'https://github.com/orionjs/orion'
+  git: 'https://github.com/mikamai/orionjs'
 });
 
 Package.onUse(function(api) {
@@ -28,8 +28,8 @@ Package.onUse(function(api) {
     ]);
 
   api.addFiles([
-    'init.js', 
-    'helpers.js', 
+    'init.js',
+    'helpers.js',
     'layouts.js',
     'home-route.js'
     ]);
@@ -39,5 +39,5 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('orionjs:core');
+  api.use('mikamai:orionjs-core');
 });

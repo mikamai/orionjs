@@ -13,5 +13,5 @@ Specifically we added:
 
 ## Getting Started
 
-Please refer to [Orion project page](https://github.com/orionjs/orion) for more informations.
+Please refer to [Orion project page](https://github.com/mikamai/orionjs) for more informations.
 

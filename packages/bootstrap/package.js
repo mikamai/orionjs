@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'orionjs:bootstrap',
+  name: 'mikamai:orionjs-bootstrap',
   summary: 'A simple theme for orion',
   version: '1.0.0',
-  git: 'https://github.com/orionjs/orion'
+  git: 'https://github.com/mikamai/orionjs'
 });
 
 Package.onUse(function(api) {
@@ -10,7 +10,7 @@ Package.onUse(function(api) {
 
   api.use([
     'meteor-platform',
-    'orionjs:core@1.0.0',
+    'mikamai:orionjs-core@1.0.0',
     'less',
     'iron:layout@1.0.7',
     'aldeed:autoform@5.1.2',
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     ]);
 
   api.imply([
-    'orionjs:core',
+    'mikamai:orionjs-core',
     'iron:layout',
     'aldeed:autoform',
     'useraccounts:bootstrap',
@@ -72,5 +72,5 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('orionjs:core');
+  api.use('mikamai:orionjs-core');
 });
